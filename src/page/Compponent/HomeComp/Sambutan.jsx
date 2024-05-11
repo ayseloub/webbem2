@@ -7,7 +7,7 @@ import popupWapres from "../../../assets/popupWapres.svg";
 import { motion } from "framer-motion";
 import { Popper } from '@mui/base/Popper';
 import React, { useState } from "react";
-import ReadMoreReact from 'read-more-react';
+import ReactReadMoreReadLess from "react-read-more-read-less";
 
 const Sambutan = () => {  
   const [anchorElPresiden, setAnchorElPresiden] = useState(null);
@@ -161,7 +161,7 @@ const Sambutan = () => {
             </div>
           </div>
 
-          <div className="mt-10 text-justify mr-5 ml-10 col-span-2 mr-20 pr-20 text-[20px] font-lato">
+          <div className="mt-10 text-justify mr-5 ml-10 col-span-2 pr-20 text-[20px] font-lato">
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               whileInView={{
@@ -177,13 +177,22 @@ const Sambutan = () => {
               <span className="font-extrabold">Assalamualaikum Warahmatullahi Wabarakatuh, Shalom, Om Swastyastu, Namo Buddhaya, Salam Kebajikan.</span>
               <br />
               <br />
-              <ReadMoreReact
-                text={"Hidup Mahasiswa! Hidup Rakyat Indonesia! Puji dan syukur selalu dipanjatkan kepada Tuhan YME atas rahmat dan karunia-Nya dalam menyertai perjalanan kami. Sebuah kapal besar bernama BEM FILKOM UB Kabinet Nawasena sedang mengarungi samudera penuh kebermanfaatan. Perjalanan ini membawa misi pergerakan, pengabdian, pengembangan dan pemberdayaan. Hal ini merupakan perjalanan yang panjang dan tidak mudah. Banyak rintangan dan hambatan dalam perjalanannya. Banyak elemen yang mengiringi kapal besar Nawasena untuk sampai ke dermaganya 'Terimakasih' kami haturkan kepada seluruh elemen yang telah mendukung perjalanan kami, sehingga segala kegiatan bisa terlaksana sebaik-baiknya serta dapat kami dokumentasikan pada Website BEM FILKOM UB 2023 dengan diiringi nilai dan makna perjalanan dari BEM FILKOM UB 2023 Kabinet Nawasena. BEM FILKOM UB 2023 Kabinet Nawasena berkomitmen dalam memberikan dampak dengan menggandeng segala elemen yang terlibat dalam usaha pengembangan prestasi akademik maupun non akademik, pelayanan kesejahteraan mahasiswa, pengabdian kepada masyarakat dan lingkungan, serta pergerakan kebangsaan. Kami bertekad dengan tulus bersama Keluarga Besar Mahasiswa Fakultas Ilmu Komputer dalam mensukseskan Fakultas Ilmu Komputer, Brawijaya dan Indonesia."}
+              {/* <ReadMoreReact
                 min={100}
                 ideal={200}
                 max={250}
-                readMoreText={<span style={{ color: '#208B71', cursor: 'pointer' }}>... Read More</span>}
-              />
+                readMoreText={<span style={{ color: '#208B71', cursor: 'pointer' }}>... Lihat Selengkapnya</span>}
+              /> */}
+              <ReactReadMoreReadLess
+                charLimit={350}
+                readMoreText={"Lihat Selengkapnya"}
+                readMoreClassName={"text-cust-green"}
+                readLessText={"Lebih Sedikit"}
+                readLessClassName={"text-cust-green"}
+
+              >
+                {"Hidup Mahasiswa! Hidup Rakyat Indonesia! Puji dan syukur selalu dipanjatkan kepada Tuhan YME atas rahmat dan karunia-Nya dalam menyertai perjalanan kami. Sebuah kapal besar bernama BEM FILKOM UB Kabinet Nawasena sedang mengarungi samudera penuh kebermanfaatan. Perjalanan ini membawa misi pergerakan, pengabdian, pengembangan dan pemberdayaan. Hal ini merupakan perjalanan yang panjang dan tidak mudah. Banyak rintangan dan hambatan dalam perjalanannya. Banyak elemen yang mengiringi kapal besar Nawasena untuk sampai ke dermaganya 'Terimakasih' kami haturkan kepada seluruh elemen yang telah mendukung perjalanan kami, sehingga segala kegiatan bisa terlaksana sebaik-baiknya serta dapat kami dokumentasikan pada Website BEM FILKOM UB 2023 dengan diiringi nilai dan makna perjalanan dari BEM FILKOM UB 2023 Kabinet Nawasena. BEM FILKOM UB 2023 Kabinet Nawasena berkomitmen dalam memberikan dampak dengan menggandeng segala elemen yang terlibat dalam usaha pengembangan prestasi akademik maupun non akademik, pelayanan kesejahteraan mahasiswa, pengabdian kepada masyarakat dan lingkungan, serta pergerakan kebangsaan. Kami bertekad dengan tulus bersama Keluarga Besar Mahasiswa Fakultas Ilmu Komputer dalam mensukseskan Fakultas Ilmu Komputer, Brawijaya dan Indonesia."}
+              </ReactReadMoreReadLess>
             </motion.div>
           </div>
         </div>

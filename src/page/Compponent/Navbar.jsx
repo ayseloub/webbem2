@@ -43,7 +43,7 @@ const Navbar = () => {
   const kabinetItems = [
     "STRUKTUR", "PRESIDEN", "WAKIL PRESIDEN", "SEKPIM", "MENKO & DIRNAL",
     "PSDI", "PSDM", "EKRAF", "KMB", "SOSLING", "KASTRAT", "ADVOKESMA",
-    "MEDINKRAF", "Adkeu", "PIT"
+    "MEDINKRAF", "ADKEU", "PIT"
   ];
   const kabarItems = ["KABAR FILKOM", "KABAR PROKER"];
   const appsItems = ["SJW FILKOM", "SIPERAT", "IT PARTNERSHIP"];
@@ -52,7 +52,7 @@ const Navbar = () => {
     <header className="bg-cust-green" style={{ backgroundImage: `url(${background})` }}>
       <div className="flex pl-6 items-center">
         <a href="/" className="mr-4">
-          <img src={Logo} alt="BEM Logo" />
+          <img src={Logo} alt="BEM Logo"/>
         </a>
         <button type="button" className="hover:text-cust-orange font-Lato text-white text-lg pl-28">
           Beranda
@@ -64,7 +64,7 @@ const Navbar = () => {
         <Dropdown items={kabarItems} />
         <Dropdown items={appsItems} />
         <div>
-          <button className="ring-1 ring-white hover:ring-cust-bg-orange2 bg-transparent outline-3 outline-gray-200 focus:outline-cust-orange hover:bg-cust-bg-orange2 text-white text-lg font-semibold py-1.5 px-10 rounded-full ml-28">
+          <button className="ring-1 ring-white hover:ring-cust-bg-orange2 bg-transparent outline-3 outline-gray-200 focus:outline-cust-orange hover:bg-cust-bg-orange2 text-white text-lg font-semibold py-1.5 px-10 rounded-full ml-48">
             Event <FontAwesomeIcon className="mt-1" icon={faArrowRightLong} />
           </button>
         </div>
