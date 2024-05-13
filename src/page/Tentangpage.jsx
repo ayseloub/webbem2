@@ -6,9 +6,6 @@ import Segment3 from "./Compponent/Tentang/segment3";
 const Tentang = () => {
     return (
         <div>
-            <h1>Masukan Dibawah Codingan Sini</h1>
-            <Segment1 />
-            <Segment2 />
             <Segment3 />
         </div>
     )
