@@ -89,12 +89,12 @@ export default function CarouselCard() {
         <>
             {/*<!-- Component: Card Carousel --> */}
 
-            <div className=" relative w-full h-max  overflow-hidden rounded shadow-xl shadow-slate-200">
+            <div className=" relative w-full h-max  overflow-hidden rounded">
                 {/* background */}
                 <img src={bgArtikelPC} alt="" className="hidden xl:flex h-max" />
                 <img src={bgArtikelHP} alt="" className="xl:hidden " />
                 {/*    <!-- Slides --> */}
-                <div className="glide-04 absolute w-full h-max top-0">
+                <div className="glide-04 absolute w-full h-max xl:top-0 top-14">
                     {/* tittle */}
                     <div className='w-full flex h-max relative justify-center top-8 xl:top-7'>
                         <img src={ArtikelTittle} alt="" className='absolute w-[20rem] mx-auto text-4xl xl:text-7xl xl:pt-36  xl:w-[43rem]' />
@@ -113,7 +113,7 @@ export default function CarouselCard() {
                         {/*    <!-- Controls --> */}
                         <div className="flex gap-3 xl:gap-8 w-full h-max items-center justify-center mt-4 xl:mt-10" data-glide-el="controls">
                             {/* Tombol Prev */}
-                            <button className={`h-8 w-8 items-center justify-center rounded-full border border-cust-yellow transition duration-300  lg:h-12 lg:w-12 ${activeSlide === 0 ? 'pointer-events-none opacity-50' : ''}`} data-glide-dir="<"
+                            <button className={`h-8 w-8 items-center justify-center rounded-full border-2 border-cust-yellow transition duration-300 lg:h-12 lg:w-12 ${activeSlide === 0 ? 'pointer-events-none opacity-50' : ''}`} data-glide-dir="<"
                                 onClick={prevSlide}
                                 aria-label="prev slide">
                                 <FontAwesomeIcon icon={faChevronLeft} style={{ color: '#FDFADB' }}/>
@@ -124,17 +124,17 @@ export default function CarouselCard() {
                                 {[...Array(totalSlides).keys()].map((indicator) => (
                                     <button
                                         key={indicator}
-                                        className={`group rounded-full`}
+                                        className={`text-2xl group rounded-full border-2 border-cust-yellow`}
                                         data-glide-dir={`=${indicator}`}
                                         aria-label={`goto slide ${indicator + 1}`}
                                     >
-                                        <span className={`h-9 xl:h-12 justify-center items-center w-8 xl:w-12 p-1 flex rounded-full  ring-1 font-semibold transition-colors duration-300 focus:outline-none text-cust-yellow ${activeSlide === indicator ? 'bg-cust-orange ring-cust-orange' : 'ring-cust-yellow'}`}>{indicator + 1}</span>
+                                        <span className={`h-9 xl:h-12 justify-center items-center w-8 xl:w-12 p-1 flex rounded-full ring-2 font-semibold transition-colors duration-300 focus:outline-none text-cust-yellow ${activeSlide === indicator ? 'bg-cust-orange ring-cust-orange' : 'ring-cust-yellow'}`}>{indicator + 1}</span>
                                     </button>
                                 ))}
                             </div>
 
                             {/* Tombol Next */}
-                            <button className={`h-8 w-8 items-center justify-center rounded-full border border-cust-yellow  transition duration-300  lg:h-12 lg:w-12 ${activeSlide === totalSlides - 1 ? 'pointer-events-none opacity-50' : ''}`} data-glide-dir=">"
+                            <button className={`h-8 w-8 items-center justify-center rounded-full border-2 border-cust-yellow  transition duration-300  lg:h-12 lg:w-12 ${activeSlide === totalSlides - 1 ? 'pointer-events-none opacity-50' : ''}`} data-glide-dir=">"
                                 onClick={nextSlide}
                                 aria-label="next slide">
                                 <FontAwesomeIcon icon={faChevronRight} style={{ color: '#FDFADB' }}/>
