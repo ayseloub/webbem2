@@ -6,10 +6,13 @@ import bgArtikelPC from '../../../assets/bgArtikelPC.png'
 
 export default function VisiMisi() {
   return (
-    <div className='px-10' style={{ backgroundImage: `url(${background}), url(${bgArtikelPC})`, backgroundSize: 'cover' }}>
+    <div className='px-10 bg-cust-yellow' style={{ backgroundImage: `url(${background}), url(${bgArtikelPC})`, backgroundSize: 'cover', backgroundPosition: 'top -20px, top -20px' }}>
+  
+
+
 
       
-        <div className='flex pb-0 pt-10 justify-end'>
+        <div className='flex pb-0 pt-24 justify-end'>
         <img src={Visi} alt="Visi" className='mr-20'/>
             <div className='font-lato text-cust-green rounded-xl box-border my-20 p-10 h-38 bg-cust-yellow'>
                 <p className='my-1'>Menjadikan BEM FILKOM UB sebagai WADAH KOLABORASI</p>

@@ -25,12 +25,12 @@ const ArahGerakComponent = () => (
     
   <div className="bg-cust-yellow h-max">
     <div className='flex w-100'>
-        <div className='w-1/2'>
+        <div className='flex flex-row w-full justify-between'>
         <img src={DaunKiri} alt="" className='max-w-64 h-auto jutify-start'/>
 
         </div>
         <div className='w-1/2 pr-0 justify-end'>
-        <img src={DaunKanan} alt="" className='max-w-64 h-auto justify-end ml-24' style={{ right: '0px'}}/>
+        <img src={DaunKanan} alt="" className='max-w-64 h-auto justify-end ml-64' style={{ right: '0px'}}/>
 
         </div>
         

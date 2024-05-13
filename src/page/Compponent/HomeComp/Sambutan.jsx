@@ -113,7 +113,7 @@ const Sambutan = () => {
               }}
               animate={{ marginTop: openPresiden ? '80px' : '30px' }}
               src={contoh}
-              className="lg:w-[200px] mt-5 ml-28"
+              className="lg:w-[200px] mt-5 lg:ml-28 mx-auto"
             />
           </div>
 
