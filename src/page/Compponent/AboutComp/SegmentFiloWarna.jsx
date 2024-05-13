@@ -10,7 +10,7 @@ import WarBiru from '../../../assets/WarBiru.png'
 const SegmentFiloWarna = () => {
   return (
     <div className="flex flex-col w-full mx-auto bg-cover lg:max-w-[1920px] bg-cust-background h-auto my-0 justify-center">
-        <div className='flex flex-col w-full bg-cover h-full justify-center pt-28 pb-40 px-10 bg-[url("https://res.cloudinary.com/dnoqmou6x/image/upload/v1715442347/bgFiloWarna_kijs7z.png")]'>
+        <div className='flex flex-col w-full bg-cover h-full justify-center pt-16 lg:pt-28 pb-40 px-10 bg-[url("https://res.cloudinary.com/dnoqmou6x/image/upload/v1715442347/bgFiloWarna_kijs7z.png")]'>
             <div className='w-full'>
                 <img src={HeadFiloWarna} className='mx-auto w-72 lg:w-[600px] mb-16'/>
             </div>
