@@ -11,9 +11,9 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
 const Tentang = () => {
     return (
-        <div className='w-full bg-cust-background h-max xl:-mb-20 py-[30rem] relative xl:py-0 xl:pb-0'>
+        <div className='w-full bg-cust-background h-max  -mb-20 xl:-mb-20 py-[30rem] relative xl:py-0 xl:pb-0'>
             {/* BACKGROUND */}
-            <img src={bgTentang} alt="" className='hidden xl:block' />
+            <img src={bgTentang} alt="" className='hidden md:block' />
 
             <img src={daunKiri} alt="daun kiri" className='h-20 xl:h-60 left-0 top-0 absolute xl:-top-8' />
             <img src={daunKanan} alt="daun kanan" className='h-20 xl:h-60 right-0 top-0 absolute xl:-top-8' />

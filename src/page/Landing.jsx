@@ -1,19 +1,20 @@
 import React from "react";
 // import Contoh from "./Compponent/HomeComp/Contoh";
-import Welcome from "./Compponent/HomeComp/Welcome";
-import Sambutan from "./Compponent/HomeComp/Sambutan"
-import Segment4 from "./Compponent/HomeComp/segment4";
+import Welcome from "./Compponent/Landing/Welcome";
+import Sambutan from "./Compponent/Landing/Sambutan"
+import Segment4 from "./Compponent/Landing/segment4";
 // import Contoh from "../Contoh";
-import Tentang from "./Compponent/HomeComp/Tentang";
-import Artikel from "./Compponent/HomeComp/Artikel";
-import Company from "./Compponent/HomeComp/Companydown";
-import Value from "./Compponent/HomeComp/Valuemag";
-import Contoh from "./Compponent/HomeComp/Contoh";
+import Tentang from "./Compponent/Landing/Tentang";
+import Artikel from "./Compponent/Landing/Artikel";
+import Company from "./Compponent/Landing/Companydown";
+import Value from "./Compponent/Landing/Valuemag";
+import Contoh from "./Compponent/Landing/Contoh";
 // import Sambutan from "./Compponent/HomeComp/Sambutan";
 
 
 const Landing = () => {
   return (
+    <div>
     <>
     <Welcome />
     <Sambutan />
@@ -22,6 +23,8 @@ const Landing = () => {
     <Contoh/>
     <Segment4 />
     </>
+
+    </div>
     
   )
 };

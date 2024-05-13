@@ -14,7 +14,7 @@ const Welcome = () => {
         shadowOffset={50}
         highlight={true}
         duration={100}
-        className="absolute group top-[320px] xxl:right-[650px] xl:right-[450px] lg:right-[450px]  hidden lg:block"
+        className="absolute group top-[220px] lg:right-[50px]  hidden lg:block"
       >
         <img
           data-atropos-offset="15"

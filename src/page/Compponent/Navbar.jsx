@@ -3,6 +3,10 @@ import background from "../../assets/bgcorak.svg";
 import Logo from "../../assets/LogoNavbar.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong, faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import NotFound from "../NotFound";
+import Tentang from "../Tentangpage";
+import { Link } from 'react-router-dom';
+
 
 const Dropdown = ({ items }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,7 +47,7 @@ const Navbar = () => {
   const kabinetItems = [
     "STRUKTUR", "PRESIDEN", "WAKIL PRESIDEN", "SEKPIM", "MENKO & DIRNAL",
     "PSDI", "PSDM", "EKRAF", "KMB", "SOSLING", "KASTRAT", "ADVOKESMA",
-    "MEDINKRAF", "Adkeu", "PIT"
+    "MEDINKRAF", "ADKEU", "PIT"
   ];
   const kabarItems = ["KABAR FILKOM", "KABAR PROKER"];
   const appsItems = ["SJW FILKOM", "SIPERAT", "IT PARTNERSHIP"];
@@ -52,19 +56,22 @@ const Navbar = () => {
     <header className="bg-cust-green" style={{ backgroundImage: `url(${background})` }}>
       <div className="flex pl-6 items-center">
         <a href="/" className="mr-4">
-          <img src={Logo} alt="BEM Logo" />
+          <img src={Logo} alt="BEM Logo"/>
         </a>
         <button type="button" className="hover:text-cust-orange font-Lato text-white text-lg pl-28">
-          Beranda
+        <Link to="">Beranda</Link>
         </button>
-        <button type="button" className="hover:text-cust-orange font-Lato text-white text-lg pl-8">
-          Tentang
+        <button type="button"  className="hover:text-cust-orange font-Lato text-white text-lg pl-8">
+        <Link to="/tentang">Tentang</Link>
         </button>
-        <Dropdown items={kabinetItems} />
+        <Dropdown items={<NotFound/>} />
+        <Dropdown items={<NotFound/>} />
+        <Dropdown items={<NotFound/>} />
+        {/* <Dropdown items={kabinetItems} />
         <Dropdown items={kabarItems} />
-        <Dropdown items={appsItems} />
+        <Dropdown items={appsItems} /> */}
         <div>
-          <button className="ring-1 ring-white hover:ring-cust-bg-orange2 bg-transparent outline-3 outline-gray-200 focus:outline-cust-orange hover:bg-cust-bg-orange2 text-white text-lg font-semibold py-1.5 px-10 rounded-full ml-28">
+          <button className="ring-1 ring-white hover:ring-cust-bg-orange2 bg-transparent outline-3 outline-gray-200 focus:outline-cust-orange hover:bg-cust-bg-orange2 text-white text-lg font-semibold py-1.5 px-10 rounded-full ml-48">
             Event <FontAwesomeIcon className="mt-1" icon={faArrowRightLong} />
           </button>
         </div>

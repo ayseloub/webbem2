@@ -101,8 +101,8 @@ const sponsorItems = [
   };
   
   return (
-    <div className="box-border bg-cust-yellow h-140" style={{ backgroundImage: `url(${background})` }}>
-      <img src={Partner} alt="Partner" className="mx-auto mb-8" />
+    <div className="box-border bg-cust-yellow h-140 my-0" style={{ backgroundImage: `url(${background})` }}>
+      <img src={Partner} alt="Partner" className="mx-auto my-0" />
       <Marquee direction="right" autoFill={true} className="mb-10">
         <div className="flex">
           {sponsorItems.map((item, index) => (

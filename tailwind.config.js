@@ -24,9 +24,11 @@ module.exports = {
         "cust-white": "#FFFEFB",
         "cust-yellow": "#FDFADB",
         "cust-gray": "#929292",
+        'cust-black': '#252525',
         "cust-artikel": "#208B71",
         "cust-bg-orange": "#FDE6BA",
         'cust-bg-orange2': '#FE7201',
+        "cust-white2": "#FFFDFD",
       },
       width:{
         '22vw': '22.2vw',
